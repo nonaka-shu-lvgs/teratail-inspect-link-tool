@@ -41,7 +41,7 @@ function renderTask(task) {
     case TestTask.STATUS.OK:
       return "\r\033[32m[o]\033[39m" + " - \033[42mSuccess\033[0m " + `URL: ${task.url}\n`
     case TestTask.STATUS.FAILED:
-      return "\r\033[31m[x]\033[39m" + " - \033[41mFailed\033[0m " + `URL: ${task.url}\n`
+      return "\r\033[31m[x]\033[39m" + " - \033[41mFailed \033[0m " + `URL: ${task.url}\n`
     default:
       return "\r\033[33m[ ]\033[39m" + " - \033[43mLoading\033[0m " + `URL: ${task.url}\n`
   }
